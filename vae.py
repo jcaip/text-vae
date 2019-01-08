@@ -150,7 +150,7 @@ for epoch in range(NUM_EPOCHS):
                 test_img = test_img.view(28, 28)
                 reco_img = reco_img.view(28, 28)
                 axarr[0].imshow(test_img.detach().cpu())
-                axarr[1].imshow(test_img.detach().cpu())
+                axarr[1].imshow(reco_img.detach().cpu())
                 plt.savefig("epoch_{}_reconstruction.png".format(epoch))
 
 
